@@ -1,0 +1,62 @@
+﻿/* 
+	reset: 重设外观
+	@author:Dorislyx
+	@email:lyxbythesea@sina.cn
+	@date:2015-11-24
+	
+ */
+body {background-color:#f0f0f0;color: #000;-webkit-text-size-adjust:none;}
+/*webkit内核的浏览器(chrome)中,当在css中定义的中文font-size小于12px的时候,浏览器仍然使用12px,这时就可以用-webkit-text-size-adjust:none;*/
+
+a { color: #000; text-decoration: none; border: 0; background-color: transparent; }
+/*transparent是透明的意思，实际上background默认的颜色就是透明的属性一般使用场景：如果一个元素覆盖在另外一个元素之上，而你想显示下面的元素，这时你就需要把上面这个元素的background设置为transparent*/
+
+a:hover,a:active { text-decoration: none; color:#2673BB;}/*去除a标签的默认样式*/
+a,area,div{blr:expression(this.onFocus=this.blur())}  /* For IE6、7 去除虚线*/
+a:active, a:focus{outline:none;} /* For IE8/Firefox 去除虚线*/
+a:active, a:focus,div:active, div:focus{outline:none;}/*去除虚线*/
+body,div,q,iframe,form,
+ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6{ margin: 0; padding: 0;}
+img,fieldset{border: none 0;}
+img{max-width:100%;}
+body,td,textarea{word-break: break-all; line-height:1.2;}
+body,input,textarea,select,button{margin: 0; font-size: 12px;font-family:'微软雅黑', Simsun, sans-serif;}
+div,p,table,th,td{ font-size:1em; font-family:'微软雅黑', Simsun, sans-serif; line-height:inherit;}
+html,body{ overflow-x:hidden;overflow-y:auto;}
+
+ul,dl,li{list-style: none; font-family:'微软雅黑', Simsun, sans-serif;}
+em,i,u,q,s,dl,caption{ font-style: normal; font-weight: normal; text-decoration: none; }
+hr{ clear:both; margin:7px 0; +margin: 0;  border:0 none;font-size: 1px; line-height:1px;color: #ddd; background-color:#ddd; height: 1px;}
+h1,h2,h3,h4,h5,h6{color:#5a5a5a;}
+h1 { font-size: 24px; font-family:'微软雅黑', Simsun, sans-serif; font-weight: normal;}
+h2 { font-size: 20px; font-family:'微软雅黑', Simsun, sans-serif; font-weight: normal;}
+h3 { font-size: 16px; font-family:'微软雅黑', Simsun, sans-serif; font-weight: bold;}
+h4 { font-size: 14px; font-family:'微软雅黑', Simsun, sans-serif; font-weight: bold;}
+h5 { font-size: 13px; font-family:'微软雅黑', Simsun, sans-serif; font-weight: bold;}
+h6 { font-size: 12px; font-family:'微软雅黑', Simsun, sans-serif; font-weight: bold;}
+em,i{color:#666}
+p{text-align: justify; text-justify: inter-ideograph; margin-top:0; margin-bottom:0;}
+textarea {line-height:1.2;}
+
+* html textarea,*+html textarea {overflow:auto; overflow-x: hidden; }/* 使多行文本框不显示默认的竖向滚动条 */
+* html iframe, * html frame {overflow:auto; }/* 使浮动窗口不显示默认的竖向滚动条 */
+* html input {overflow: hidden; }/* 使按钮文字不溢出 */
+/* end reset */
+
+/* Global:常用样式 */
+.fl{ float:left; _display:inline;}/*_display:inline;解决在有浮动的情况下，IE6下的双边距bug*/
+.fr{ float:right; _display:inline;}/*_display:inline;解决在有浮动的情况下，IE6下的双边距bug*/
+.clearfix{display: block; display: table; *display: inline-block; _height: 1%;}
+.clearfix:after {content:'\20'; display:block; clear:both;}
+.clearself{ overflow:hidden; _overflow:visible; _height:1%;}
+.clear { font-size: 0px; height: 0px; line-height: 0px; overflow: hidden; clear: both;}
+.inline-block{display:inline-block;*zoom: 1;*display: inline;vertical-align:middle;overflow:hidden;}
+
+.justify{ text-align: justify; text-justify: inter-ideograph;}
+.justify{ text-align: justify; text-justify: inter-ideograph;}
+/*text-align:justify-->文本两端对齐*//*text-justify:inter-ideograph;-->为表意字文本提供完全两端对齐*/
+/*中文段落两端对齐（单行不动）需两者才能兼容哦！text-align:Justify(火狐);text-justify:inter-ideograph(IE)*/
+
+/* end Global */
+
+
